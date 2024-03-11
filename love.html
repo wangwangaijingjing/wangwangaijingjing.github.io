@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>表达爱意的页面</title>
+    <style>
+        /* 样式表，可根据需要自行修改 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        .hearts {
+            position: absolute;
+            animation: fly 2s infinite;
+        }
+        @keyframes fly {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(20px); }
+        }
+        .fireworks {
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color: #3498db;
+            opacity: 0.5;
+            animation: explode 8s infinite;
+        }
+        @keyframes explode {
+            0% { transform: scale(1); }
+            50% { transform: rotate(360deg); }
+            100% { transform: scale(2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop muted> <!-- 播放音乐 -->
+            <source src="music.mp3" type="audio/mpeg">
+        </video>
+        <div class="hearts"></div> <!-- 自由纷飞的爱心 -->
+    </div> <!-- /container -->
+    <div class="fireworks" id="fireworks"> <!-- 烟花效果 -->
+        <!-- 这里放置你的图片和视频链接 -->
+    </div>
+</body>
+</html>
